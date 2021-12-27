@@ -1,0 +1,34 @@
+CREATE TABLE users (
+    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    Firstname VARCHAR(30) NOT NULL,
+    Lastname VARCHAR(30) NOT NULL,
+    email VARCHAR(30) NOT NULL,
+    password VARCHAR(30) NOT NULL,
+    reg_date TIMESTAMP
+)
+
+
+INSERT INTO users (email, password)
+VALUES (  '2167@example.com','John')
+
+
+CREATE TABLE threshold (
+    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+   Mintemperature VARCHAR(30) NOT NULL,
+   Maxtemperature VARCHAR(30) NOT NULL,
+   Minhumidity VARCHAR(30) NOT NULL,
+   Maxhumidity VARCHAR(30) NOT NULL,
+   Minillumination VARCHAR(30) NOT NULL,
+  Maxillumination VARCHAR(30) NOT NULL,
+   Maxsoil VARCHAR(30) NOT NULL,
+   Minsoil VARCHAR(30) NOT NULL,
+    reg_date TIMESTAMP
+)
+
+CREATE TABLE circumstance (
+    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+   temperature VARCHAR(30) NOT NULL,  
+   humidity VARCHAR(30) NOT NULL,
+  illumination VARCHAR(30) NOT NULL,
+    reg_date TIMESTAMP
+)
